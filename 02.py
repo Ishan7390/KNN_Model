@@ -28,7 +28,7 @@ Y = list(clas)
 x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(X,Y,test_size = 0.1)
 
 #it's important to use odd integers for k, since there might be an ambiguous case
-model = KNeighborsClassifier(n_neighbors = 5)
+model = KNeighborsClassifier(n_neighbors = 7)
 
 model.fit(x_train, y_train)
 acc = model.score(x_test, y_test)
